@@ -1,0 +1,60 @@
+.container-card {
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: calc(2px + 0.6vw) calc(2px + 0.6vw) calc(88px + 0.6vw);
+    margin-right: calc(50px + 5vw);
+    z-index: 1;
+}
+
+.card__div--titre {
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+}
+
+.card__h1 {
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.card__h2 {
+    font-size: 18.5px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.card__div--photo-text {
+    width: 100%;
+    padding: calc(80px + 2vw) 2px 0 2px;
+}
+
+.card__div--photo {
+    position: relative;
+    width: 120px;
+    height: 100px;
+    float: left;
+    margin: 0 0.5em 0.5em 0;
+}
+
+.card__img {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    max-width: 120px;
+    height: auto;
+}
+
+.card__p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 33px;
+    letter-spacing: 0;
+}

@@ -1,0 +1,831 @@
+/* 
+   ******************************************************* WIDTH *******************************************************
+*/
+
+/* 
+    ______________________________ MAX-WIDTH 5000px ______________________________
+*/
+@media only screen and (min-width: 2560px) and (max-width: 5000px) {
+
+    body,
+    input,
+    button,
+    textarea,
+    select {
+        font-size: calc(30px + 0.35vw);
+    }
+
+    /*NAVBAR*/
+    .navbar__link {
+        font-size: calc(26px + 0.35vw);
+    }
+
+    .navbar__logo {
+        width: calc(120px + 4.5vw);
+    }
+
+    /*SECTIONS*/
+    .section__div--parallaxe {
+        background-size: 140%;
+    }
+
+    /*SECTIONS A PROPOS*/
+    .card {
+        padding: calc(102px + 1vw) calc(2px + 0.6vw) calc(190px + 1vw);
+    }
+
+    .card__div--titre {
+        top: -125px;
+    }
+
+    .card__h1 {
+        font-size: 55px;
+        letter-spacing: 2px;
+    }
+
+    .card__h2 {
+        font-size: 43px;
+        letter-spacing: 2px;
+    }
+
+    .card__div--photo {
+        width: 200px;
+        height: 220px;
+    }
+
+    .card__img {
+        max-width: 200px;
+    }
+
+    .card__p {
+        font-size: 35px;
+        line-height: 65px;
+    }
+
+    /*SECTIONS GALERIE*/
+    .slide__a--prev,
+    .slide__a--next {
+        font-size: calc(60px + 0.9vw);
+    }
+
+    .slide__span--btnGalerie  {
+        font-size: calc(30px + 0.5vw);
+    }
+
+    .slide__div--container-square {
+        width: calc(300px + 30vw);
+    }
+
+    .slide__div--square-gal {
+        width: calc(160px + 5vw);
+        height: calc(160px + 5vw);
+    }
+
+    .slide__div--square {
+        width: calc(95px + 6vw);
+        height: calc(95px + 6vw);
+    }
+
+    .slide__p--square-txt {
+        font-size: calc(25px + 0.35vw);
+    }
+
+    .slide__span--text-modal {
+        font-size: calc(40px + 0.4vw);
+    }
+
+    .slide__div--window-2 p {
+        font-size: calc(30px + 0.4vw);
+        margin-top: 10px;
+    }
+
+    .slide__img--modal-verti {
+        width: calc(750px + 19vw);
+    }
+
+    .slide__img--modal-hori {
+        width: calc(950px + 41vw);
+    }
+
+    .slide__img--modal-spec {
+        width: calc(580px + 11vw);
+    }
+
+    .slide__button--close {
+        padding: 0 calc(10px + 0.2vw);
+        border: 2px solid var(--grey);
+        font-size: calc(40px + 0.5vw);
+    }
+
+    /*SECTIONS CONTACT*/
+    .avis {
+        padding: 0 calc(1px + 7vw) calc(10px + 0.5vw) 0;
+    }
+
+    .avis__p {
+        font-size: calc(25px + 0.9vw);
+        letter-spacing: 2px;
+    }
+
+    .form__label {
+        font-size: calc(22px + 0.3vw);
+    }
+
+    #nom,
+    #email {
+        height: calc(40px + 1vw);
+    }
+
+    #message {
+        height: calc(400px + 6vw);
+    }
+
+    .form__div--submit {
+        bottom: -100px;
+    }
+
+    .form__input--submit {
+        font-size: calc(20px + 0.3vw);
+        padding: 20px 60px;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+}
+
+/* END MAX-WIDTH 5000px ______________________________*/
+
+
+/* 
+    ______________________________ MIN-WIDTH 2560px AND MAX-WIDTH 3839px ______________________________
+*/
+@media only screen and (min-width: 2560px) and (max-width: 3839px) {
+
+    /*SECTIONS A PROPOS*/
+    .card {
+        padding: calc(2px + 1vw) calc(2px + 0.6vw) calc(60px + 1vw);
+    }
+
+    .card__div--titre {
+        top: -105px;
+    }
+
+    .card__h1 {
+        font-size: 45px;
+    }
+
+    .card__h2 {
+        font-size: 33px;
+    }
+
+    .card__div--photo {
+        width: 180px;
+        height: 200px;
+    }
+
+    .card__img {
+        max-width: 180px;
+    }
+
+    .card__p {
+        font-size: 29px;
+        line-height: 55px;
+    }
+
+    /*SECTIONS GALERIE*/
+    .slide__img--modal-verti {
+        width: calc(500px + 19vw);
+    }
+
+    .slide__img--modal-hori {
+        width: calc(750px + 41vw);
+    }
+
+    .slide__img--modal-spec {
+        width: calc(380px + 11vw);
+    }
+
+    /*SECTIONS CONTACT*/
+    #message {
+        height: calc(180px + 6vw);
+    }
+}
+
+/* END MIN-WIDTH 2560px AND MAX-WIDTH 3839px ______________________________*/
+
+
+/* 
+    ______________________________ MAX-WIDTH 1800px ______________________________
+*/
+@media only screen and (max-width: 1800px) {
+
+    /*SECTIONS*/
+    .section__div--parallaxe {
+        background-size: 110%;
+    }
+
+}
+
+/* END MAX-WIDTH 1800px ______________________________*/
+
+
+/* 
+    ______________________________ MAX-WIDTH 1300px ______________________________
+*/
+@media only screen and (max-width: 1300px) {
+
+    /*SECTIONS*/
+    .section__div--parallaxe {
+        background-size: 150%;
+    }
+    
+    /*SECTION A PROPOS*/
+    .card__div--titre {
+        top: -48px;
+    }
+
+    .card__h1 {
+        font-size: 22px;
+    }
+
+    .card__h2 {
+        font-size: 13px;
+    }
+
+    .card__div--photo {
+        width: 90px;
+        height: 70px;
+    }
+
+    .card__img {
+        top: -56px;
+        max-width: 90px;
+    }
+
+    .card__p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+}
+
+/* END MAX-WIDTH 1300px ______________________________*/
+
+
+/* 
+    ______________________________ MAX-WIDTH 1100px ______________________________
+*/
+@media only screen and (max-width: 1100px) {
+
+    /*SECTIONS*/
+    .section__div--parallaxe {
+        background-size: 190%;
+    }
+
+}
+
+/* END MAX-WIDTH 1100px ______________________________*/
+
+
+/* 
+    ______________________________ MAX-WIDTH 799px ______________________________
+*/
+@media only screen and (max-width: 799px) {
+
+    /*NAVBAR*/
+    .header-nav {
+        padding: 5px 10px 5px 20px;
+        align-items: center;
+    }
+
+    .navbar {
+        background-color: transparent;
+    }
+
+    .navbar__ul {
+        position: fixed;
+        padding: 10px 0;
+        left: -105%;
+        top: 59px;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        z-index: 1000;
+        background-color: var(--white);
+    }
+
+    .navbar__ul.active {
+        left: 0;
+    }
+
+    .navbar__li {
+        margin: 10px 0;
+    }
+
+    .navbar__li--span {
+        display: none;
+    }
+
+    .navbar__div--burger {
+        display: block;
+    }
+
+    .navbar__div--burger.active .navbar__span--burgerBar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar__div--burger.active .navbar__span--burgerBar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar__div--burger.active .navbar__span--burgerBar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar__link.active {
+        box-shadow: none;
+    }
+
+    /*Passe la gestion du scroll en css (trop de problèmes de compatibilité navigateur avec tactile en js)*/
+    main {
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 100%;
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+    }
+
+    /*SECTIONS*/
+    .section__div--parallaxe {
+        background-size: 280%;
+    }
+
+    /*SECTION A PROPOS*/
+    .card {
+        padding: calc(6px + 0.6vw) 0 calc(35px + 0.7vw) 0;
+    }
+
+    /*SECTION GALERIE*/
+    .slide__a--prev:hover,
+    .slide__a--next:hover {
+        color: var(--text-white);
+        box-shadow: none;
+    }
+
+    /* Slider position flèches et groupes de carrés*/
+    .slide__div--window-gal,
+    .slide__div--window-1 {
+        margin-top: 14%;
+    }
+
+    /*Désactive :hover*/
+    .slide__span--square-txt-gal {
+        text-shadow: 2px 2px 2px var(--text-black);
+        opacity: 1;
+        color: var(--text-white);
+    }
+
+    .slide__div--square-gal:before {
+        opacity: 0.9;
+    }
+
+    .slide__div--square-gal:hover:before {
+        opacity: 1;
+    }
+
+    .slide__div--opac:hover {
+        opacity: 0;
+    }
+
+    .gap-effect:hover {
+        gap: calc(6px + 0.8vw);
+    }
+
+    /*SECTION CONTACT*/
+    .form__input {
+        border: 2px double var(--white);
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+}
+
+/* END MAX-WIDTH 768px ______________________________*/
+
+
+/* 
+    ______________________________ MAX-WIDTH 500px ______________________________
+*/
+@media only screen and (max-width: 500px) {
+
+    /*SECTIONS*/
+    .section__div--parallaxe {
+        background-size: 360%;
+    }
+
+    .section__div--item:nth-child(1),
+    .section__div--item:nth-child(3) {
+        height: 30%;
+    }
+
+    .section__div--item:nth-child(2) {
+        height: 40%;
+    }
+
+    /*SECTION A PROPOS*/
+    .container-card {
+        justify-content: center;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    .card__h1 {
+        font-size: 20px;
+    }
+
+    .card__h2 {
+        font-size: 11px;
+    }
+
+    .card__p {
+        font-size: 11px;
+        line-height: 21px;
+    }
+
+    .card__div--photo-text {
+        padding: calc(50px + 2vw) 2px 0 2px;
+    }
+
+    .card__div--photo {
+        width: 80px;
+        height: 60px;
+    }
+    
+    .card__img {
+        max-width: 80px;
+        top: -56px;
+    }
+
+    /*SECTION GALERIE*/
+    /* Slider position flèches et groupes de carrés*/
+    .slide__div--window-gal,
+    .slide__div--window-1 {
+        margin-top: 17%;
+    }
+
+    /* SECTION CONTACT */
+    .form__input--submit {
+        padding: 8px 20px;
+    }
+
+    /* SECTION CONTACT */
+    .block-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+}
+
+/* END MAX-WIDTH 500px ______________________________*/
+
+
+/* 
+    ______________________________ MAX-WIDTH 360px ______________________________
+*/
+@media only screen and (max-width: 360px) {
+
+    /* SECTIONS */
+    .section__div--parallaxe {
+        background-size: 420%;
+    }
+
+    /* SECTION HOME */
+    .section__p {
+        font-size: 17px;
+    }
+
+    /*SECTION A PROPOS*/
+    .card {
+        padding: calc(6px + 0.6vw) 2px calc(2px + 0.7vw);
+    }
+
+    .card__div--titre {
+        top: -43px;
+    }
+
+    .card__div--photo-text {
+        padding: calc(50px + 2vw) 2px 0 2px;
+    }
+
+    .card__p {
+        line-height: 19px;
+        letter-spacing: 0;
+    }
+
+    /* SECTION GALERIE */
+    /* Slider position flèches et groupes de carrés*/
+    .slide__div--window-gal,
+    .slide__div--window-1 {
+        margin-top: 20%;
+    }
+
+}
+
+/* END MAX-WIDTH 360px ______________________________*/
+
+
+/* 
+   ******************************************************* END WIDTH *******************************************************
+*/
+
+
+
+/* 
+   ******************************************************* HEIGHT *******************************************************
+*/
+
+
+/* 
+    ______________________________ MAX-HEIGHT 599px ______________________________
+*/
+
+@media only screen and (max-height: 599px) {
+
+    /*SECTIONS*/
+    .section__div--parallaxe {
+        background-size: 170%;
+    }
+
+    /* NAVBAR*/
+    .navbar__logo {
+        width: calc(70px + 4.5vw);
+    }
+
+    /* SECTION GALERIE */
+    /* Slider position groupes de carrés*/
+    .slide__a--prev,
+    .slide__a--next {
+        top: 43%;
+    }
+
+    .slide__div--window-gal,
+    .slide__div--window-1 {
+        margin-top: 6%;
+    }
+
+    .slide__div--square-gal {
+        width: calc(50px + 5vw);
+        height: calc(50px + 5vw);
+    }
+
+    .slide__div--square {
+        width: calc(30px + 5vw);
+        height: calc(30px + 5vw);
+    }
+
+    .slide__span--square-txt-gal {
+        font-size: calc(12px + 0.35vw);
+    }
+
+    /* end */
+
+    .slide__div--window-1 p {
+        font-size: calc(8px + 0.4vw);
+        line-height: 11px;
+    }
+
+    .slide__img--modal-hori {
+        width: calc(350px + 3vw);
+        height: auto;
+    }
+
+    .slide__img--modal-verti {
+        width: calc(180px + 3vw);
+        height: auto;
+    }
+
+    .slide__img--modal-spec {
+        width: calc(120px + 3vw);
+        height: auto;
+    }
+
+    .slide__div--text-modal {
+        padding-top: 0;
+    }
+
+    /*SECTION A PROPOS*/
+    .card {
+        padding-bottom: 50px;
+    }
+
+    .card__div--titre {
+        top: -34px;
+    }
+
+    .card__h1 {
+        font-size: 15px;
+    }
+
+    .card__h2 {
+        font-size: 8.5px;
+        font-weight: normal;
+        letter-spacing: 2px;
+    }
+
+    .card__div--photo-text {
+        padding: 50px 5px 5px;
+    }
+
+    .card__div--photo {
+        width: 60px;
+        height: 50px;
+    }
+
+    .card__img {
+        max-width: 55px;
+        top: -30px;
+    }
+
+    .card__p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    /* SECTION CONTACT */
+    #contact {
+        padding: 0;
+        gap: 3px;
+    }
+
+    .block-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form {
+        padding: 8px calc(10px + 1.5vw);
+    }
+
+    .p-contact {
+        font-size: 14px;
+    }
+
+    .form__label {
+        font-size: calc(8px + 0.3vw);
+    }
+
+    .form__input {
+        border: 2px double var(--white);
+    }
+
+    #nom,
+    #email {
+        font-size: calc(7px + 0.3vw);
+    }
+
+    .form__input--submit {
+        font-size: calc(10px + 0.3vw);
+    }
+}
+
+/* END MAX-HEIGHT 599px______________________________*/
+
+
+/* 
+    ______________________________ MAX-HEIGHT 500px ______________________________
+*/
+@media only screen and (max-height: 500px) {
+
+    /* NAVBAR */
+    .header-nav {
+        padding: 4px 10px 2px 20px;
+    }
+
+    .navbar {
+        padding: 2px;
+    }
+
+    .navbar__logo {
+        width: calc(50px + 4.5vw);
+    }
+
+    .navbar__ul {
+        top: 38px;
+    }
+
+    /* SECTION GALERIE */
+    .slide__span--btnGalerie  {
+        font-size: calc(10px + 0.35vw);
+    }
+
+    .slide__div--square-gal {
+        width: calc(40px + 5vw);
+        height: calc(40px + 5vw);
+    }
+
+    .slide__div--square {
+        width: calc(25px + 5vw);
+        height: calc(25px + 5vw);
+    }
+
+    /* end Slider position*/
+
+    /*SECTION A PROPOS*/
+    .card {
+        padding-bottom: 0;
+    }
+
+}
+
+/* END MAX-HEIGHT 500px______________________________*/
+
+
+
+/* 
+    ______________________________ MAX-HEIGHT 410px ______________________________
+*/
+
+@media only screen and (max-height: 410px) {
+
+    /*SECTION CONTACT*/
+    .form {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 20px 5px;
+        gap: 10px;
+    }
+
+    .form__div--champ-wrap {
+        width: 48%;
+    }
+    
+    .form__label--nom,
+    .form__label--textarea {
+        margin-top: 0;
+    }
+
+    .form__div--submit {
+        bottom: -40px;
+    }
+
+    .form__input--submit {
+        padding: 4px 20px;
+    }
+
+}
+
+/* END MAX-HEIGHT 410px______________________________*/
+
+
+
+
+/* 
+    ______________________________ MAX-HEIGHT 360px ______________________________
+*/
+
+@media only screen and (max-height: 360px) {
+
+    /*SECTION A PROPOS*/
+    .section__p {
+        font-size: 20px;
+    }
+
+    /*SECTION A PROPOS*/
+    .card__div--photo-text {
+        padding: 25px 5px 5px;
+    }
+
+    /*SECTION GALERIE*/
+    .slide__div--square {
+        width: calc(15px + 5vw);
+        height: calc(15px + 5vw);
+    }
+
+    /*SECTION CONTACT*/
+    .avis {
+        padding: 0 calc(1px + 7vw) 2px 0;
+    }
+
+    .form__div--submit {
+        bottom: -30px;
+    }
+
+}
+
+/* END MAX-HEIGHT 360px______________________________*/

@@ -1,0 +1,28 @@
+.loginRegister__h1 {
+    margin-bottom: 20px;
+}
+
+.form {
+    width: calc(310px + 0.5vw);
+}
+
+.form__label {
+    margin: 8px 0 1px;
+}
+
+.form__input {
+    padding: 2px;
+}
+
+.form__div--validate{
+    margin: 15px 0;
+}
+
+.form__button--validate{
+    padding: 4px;
+    font-size: calc(10px + 0.35vw);
+}
+
+.loginRegister__a{
+    color: var(--text-darkGrey);
+}

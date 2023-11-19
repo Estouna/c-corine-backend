@@ -1,0 +1,350 @@
+#galery {
+    background-color: var(--white);
+}
+
+.galery__div--main-content {
+    width: 100%;
+}
+
+.galery__div--slideshow-container {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.galery__div--slideshow {
+    position: absolute;
+    height: 100%;
+    display: flex;
+}
+
+/* ------------------------- BUTTONS PREV/NEXT SLIDER ------------------------- */
+.slide__a--prev,
+.slide__a--next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: calc(30px + 0.9vw);
+    transition: 0.3s ease;
+    padding: calc(10px + 0.5vw);
+}
+
+.slide__a--prev {left: 0;}
+.slide__a--next {right: 0;}
+.slide__a--prev:hover, .slide__a--next:hover {color: var(--white);}
+.slide__a--prev:hover {padding-left: calc(15px + 0.5vw);}
+.slide__a--next:hover {padding-right: calc(15px + 0.5vw);}
+
+/* ------------------------- SLIDES -------------------------*/
+.slide {
+    position: relative;
+    /*empêche qu'ils rétrécisent*/
+    flex-shrink: 0;
+    width: 100vw;
+    height: 100%;
+    color: var(--text-white);
+}
+
+/* btn retour Galerie */
+.slide__div--btnGalerie {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 20%;
+}
+
+.slide__span--btnGalerie {
+    font-family: var(--font-3);
+    font-size: calc(13px + 0.9vw);
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.6s;
+    color: white;
+}
+
+.slide__span--btnGalerie:hover {opacity: 0.4;}
+
+.slide__div--window-gal {
+    max-width: 85%;
+    gap: calc(6px + 0.8vw);
+}
+
+.slide__div--window-gal, .slide__div--window-1 {
+    margin-top: 6%;
+}
+
+.slide__div--container-square {
+    width: calc(180px + 30vw);
+    gap: calc(6px + 0.8vw);
+}
+
+.slide__div--square, .slide__div--square-gal {
+    position: relative;
+    transition: 2s;
+}
+
+.slide__div--square-gal {
+    color: var(--text-black);
+    width: calc(80px + 5vw);
+    height: calc(80px + 5vw);
+}
+
+.slide__div--square {
+    width: calc(35px + 6vw);
+    height: calc(35px + 6vw);
+}
+
+.slide__div--square-gap {gap: calc(6px + 0.8vw);}
+
+/* Slide Galerie (sommaire)*/
+.slide__span--square-txt-gal,
+.slide__div--opac {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 101%;
+    height: 101%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+.slide__span--square-txt-gal {
+    font-size: calc(19px + 0.35vw);
+    transition: 1s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.slide__div--square-gal:hover:before {opacity: 0.3;}
+.slide__span--square-txt-gal:hover {opacity: 1;}
+
+/* Animation deuxième ligne slides (sauf slide Galerie)*/
+/* Mouvement des 4 carrés */
+.gap-effect {
+    position: relative;
+    color: var(--text-white);
+    transition: 0.5s;
+}
+
+.gap-effect:hover {gap: 0;}
+
+/* Texte qui apparaît avec background-color du slide */
+.slide__div--opac {transition: 1.5s;}
+
+.slide__div--opac:hover {opacity: 1;}
+.slide__div--bg-2:hover {background-color: var(--slide-2);}
+.slide__div--bg-3:hover {background-color: var(--slide-3);}
+.slide__div--bg-4:hover {background-color: var(--slide-4);}
+.slide__div--bg-5:hover {background-color: var(--slide-5);}
+.slide__div--bg-6:hover {background-color: var(--slide-6);}
+.slide__div--bg-7:hover {background-color: var(--slide-7);}
+.slide__div--bg-8:hover {background-color: var(--slide-8);}
+.slide__div--bg-9:hover {background-color: var(--slide-9);}
+.slide__div--bg-10:hover {background-color: var(--slide-10);}
+.slide__div--bg-11:hover {background-color: var(--slide-11);}
+.slide__div--bg-12:hover {background-color: var(--slide-12);}
+.slide__div--bg-13:hover {background-color: var(--slide-13);}
+
+.slide__p--square-txt {
+    font-size: calc(8px + 0.35vw);
+    text-align: center;
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.slide__div--square:before, .slide__div--square-gal:before {
+    content: '';
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    transition: 1.5s;
+    z-index: 1;
+}
+
+/* Slide Galerie*/
+.slide__div--s-gal-1:before {background-image: url('../images/CarreLes3.jpg');}
+.slide__div--s-gal-2:before {background-image: url('../images/CarreVolition.jpg');}
+.slide__div--s-gal-3:before {background-image: url('../images/CarreMorphose.jpg');}
+.slide__div--s-gal-4:before {background-image: url('../images/CarreNephelee.jpg');}
+.slide__div--s-gal-5:before {background-image: url('../images/CarrePassage.jpg');}
+.slide__div--s-gal-6:before {background-image: url('../images/CarreGecko.jpg');}
+.slide__div--s-gal-7:before {background-image: url('../images/CarreEvolution.jpg');}
+.slide__div--s-gal-8:before {background-image: url('../images/CarrePeriode.jpg');}
+.slide__div--s-gal-9:before {background-image: url('../images/CarreReunion.jpg');}
+.slide__div--s-gal-10:before {background-image: url('../images/CarreEnsemble.jpg');}
+.slide__div--s-gal-11:before {background-image: url('../images/CarreElfe.jpg');}
+.slide__div--s-gal-12:before {background-image: url('../images/CarreDivision.jpg');}
+
+.slide__div--s-lesTrois:before {background-image: url('../images/CarreLes3.jpg');}
+.slide__div--s-volition:before {background-image: url('../images/CarreVolition.jpg');}
+.slide__div--s-morphose:before {background-image: url('../images/CarreMorphose.jpg');}
+.slide__div--s-nephelee:before {background-image: url('../images/CarreNephelee.jpg');}
+.slide__div--s-passage:before {background-image: url('../images/CarrePassage.jpg');}
+.slide__div--s-gecko:before {background-image: url('../images/CarreGecko.jpg');}
+.slide__div--s-evolution:before {background-image: url('../images/CarreEvolution.jpg');}
+.slide__div--s-periode:before {background-image: url('../images/CarrePeriode.jpg');}
+.slide__div--s-reunion:before {background-image: url('../images/CarreReunion.jpg');}
+.slide__div--s-ensemble:before {background-image: url('../images/CarreEnsemble.jpg');}
+.slide__div--s-elfe:before {background-image: url('../images/CarreElfe.jpg');}
+.slide__div--s-division:before {background-image: url('../images/CarreDivision.jpg');}
+
+.slide__div--btn-img {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.slide__div--window-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background des slides*/
+.s1 {background-color: var(--slide-1);}
+.s2 {background-color: var(--slide-2);}
+.s3 {background-color: var(--slide-3);}
+.s4 {background-color: var(--slide-4);}
+.s5 {background-color: var(--slide-5);}
+.s6 {background-color: var(--slide-6);}
+.s7 {background-color: var(--slide-7);}
+.s8 {background-color: var(--slide-8);}
+.s9 {background-color: var(--slide-9);}
+.s10 {background-color: var(--slide-10);}
+.s11 {background-color: var(--slide-11);}
+.s12 {background-color: var(--slide-12);}
+.s13 {background-color: var(--slide-13);}
+
+/* END SLIDES */
+
+/* MODAL */
+.slide__div--modal {
+    position: absolute;
+    top: 0;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100svh;
+    transition:
+        visibility 0.2s ease-out,
+        opacity 0.4s ease-out;
+    visibility: hidden;
+    opacity: 0;
+    color: var(--text-black);
+    padding: 10px;
+    z-index: 1100;
+    box-shadow: inset 0 0 20px 1px var(--black);
+}
+
+.slide__div--modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.slide__div--window-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: calc(10px + 1vw);
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.slide__span--text-modal {
+    font-family: var(--font-2);
+    font-size: calc(16px + 0.4vw);
+}
+
+.slide__div--window-2 p {
+    font-size: calc(11px + 0.4vw);
+    margin-top: 10px;
+}
+
+.slide__img--modal-verti {
+    width: calc(230px + 20vw);
+    height: auto;
+}
+
+.slide__img--modal-hori {
+    width: calc(130px + 50vw);
+    height: auto;
+}
+
+.slide__img--modal-spec {
+    width: calc(180px + 13vw);
+    height: auto;
+}
+
+.slide__p--text-modal {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/*Button close modal*/
+.slide__button--close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 3%;
+    right: 5%;
+    padding: 0 calc(6px + 0.2vw);
+    background-color: var(--grey);
+    color: var(--text-white);
+    border: 1px solid var(--grey);
+    font-size: calc(20px + 0.5vw);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.slide__button--close:hover {
+    background-color: #d2d2d2;
+}
+
+/* END MODAL */
+
+/* FADING ANIMATION */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .7
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .7
+    }
+
+    to {
+        opacity: 1
+    }
+}
+

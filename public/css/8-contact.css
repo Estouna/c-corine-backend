@@ -1,0 +1,118 @@
+.avis {
+    width: 100%;
+    padding: 0 calc(1px + 7vw) calc(1px + 0.5vw) 0;
+}
+
+.avis__p {
+    font-size: calc(10px + 0.9vw);
+    letter-spacing: 1px;
+}
+
+.block-form {
+    margin-left: calc(50px + 5vw);
+    height: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(200px + 30vw);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: calc(10px + 1.5vw) calc(10px + 1.5vw);
+    border-radius: 5px;
+    height: 100%;
+    z-index: 1;
+}
+
+.form__div--champ-wrap {
+    width: 100%;
+}
+
+.form__label {
+    font-size: calc(12px + 0.3vw);
+    color: var(--text-black);
+    margin: calc(4px + 0.4vw) 0 calc(2px + 0.4vw);
+}
+
+.form__label--nom {
+    margin-top: 0;
+}
+
+.form__input {
+    border: 3px double var(--white);
+    border-radius: 10px;
+    color: var(--text-darkGrey);
+    padding: 15px;
+    box-shadow:
+        -1px 1px 2px 1px #687ab3,
+        1px -1px 2px 2px #e8eeff,
+        inset 2px -2px 1px 0px #4b67bc,
+        inset -2px 2px 2px 0px #ebf0ff;
+    transition: 0.3s ease;
+}
+
+.form__input:focus {
+    background-color: #ffffff;
+    color: var(--text-black);
+    outline: 1px solid #6382dd;
+    box-shadow:
+        0 0 0 0 #ffffff,
+        0 0 0 0 #ffffff,
+        inset -3px 3px 9px 0px #3f5cb1,
+        inset 3px -3px 5px #ffffff;
+}
+
+#nom,
+#email {
+    height: calc(20px + 1vw);
+}
+
+#message {
+    height: calc(60px + 6vw);
+}
+
+.form__div--submit {
+    bottom: -70px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.form__input--submit {
+    font-size: calc(10px + 0.3vw);
+    background-color: var(--blue);
+    color: var(--text-white);
+    transition: 0.5s;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.form__input--submit:hover {
+    background-color: #7e9bf3;
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: var(--blue);
+}
+
+.footer__ul {
+    font-size: calc(7px + 0.35vw);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(5px + 0.5vw);
+}
+
+.footer__a {
+    color: var(--text-white);
+}
